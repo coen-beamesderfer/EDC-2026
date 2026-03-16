@@ -388,18 +388,13 @@ p + p {
 }
 
 .card-avatar {
-  width: 52px;
-  height: 52px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
-  background: rgba(0,180,216,0.12);
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 2px solid var(--accent);
+  object-fit: cover;
   margin-bottom: var(--space-sm);
+  display: block;
 }
 
 .card-icon {
