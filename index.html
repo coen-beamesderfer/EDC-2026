@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedCap · Smart Pill Cap Design Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero"><span class="bracket">[</span>MEDCAP<span class="bracket">]</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#brief">Brief</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#models">3D Models</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="scan-line" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow"><span class="dot-blink"></span>Engineering Design Portfolio</p>
+      <h1 class="hero-title">Smart Pill Cap<br /><em>Day Indicator</em></h1>
+      <p class="hero-sub">A ratchet-driven automatic day tracker for standard pill bottles — designed, prototyped, and tested from concept to CAD.</p>
+      <div class="team-row">
+        <span class="team-chip">Coen Beamesderfer</span>
+        <span class="team-chip">Abigail Zayatz</span>
+      </div>
+      <a href="#about" class="scroll-cue">Scroll to explore <span class="bounce-arrow">↓</span></a>
+    </div>
+    <div class="corner corner-tl" aria-hidden="true"></div>
+    <div class="corner corner-tr" aria-hidden="true"></div>
+    <div class="corner corner-bl" aria-hidden="true"></div>
+    <div class="corner corner-br" aria-hidden="true"></div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About Us</h2>
+      <p class="section-intro">We are a team of two upperclassmen at Central York High School. This portfolio documents our full design process for our major project: a smart pill cap with an automatic day indicator.</p>
+      <div class="cards-grid">
+        <div class="card fade-card">
+          <div class="card-avatar">CB</div>
+          <h3>Coen Beamesderfer</h3>
+          <p class="card-role">Research &amp; Documentation</p>
+          <p>Responsible for all documentation and research.</p>
+        </div>
+        <div class="card fade-card">
+          <div class="card-avatar">AZ</div>
+          <h3>Abigail Zayatz</h3>
+          <p class="card-role">CAD Lead</p>
+          <p>Responsible for all 3D modeling in SolidWorks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="brief" class="section section-dark">
+    <div class="container">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Design Brief</h2>
+      <div class="two-col">
+        <div>
+          <h3 class="col-heading">The Problem</h3>
+          <p>Elderly and chronically ill patients frequently miss doses or accidentally double-dose because standard pill bottles give no indication of whether today's dose has already been taken.</p>
+          <p>Existing pill organizers are bulky and don't attach to the original bottle. Smart electronic reminders require charging and are often too complex for elderly users.</p>
+          <h3 class="col-heading" style="margin-top: 2rem;">Our Solution</h3>
+          <p>A passive mechanical cap that automatically advances a visible day indicator each time the bottle is opened — no batteries, no apps, no extra equipment.</p>
+        </div>
+        <div>
+          <h3 class="col-heading">Design Requirements</h3>
+          <ul class="req-list">
+            <li><span class="req-tag req-must">MUST</span>Display the current day of the week clearly</li>
+            <li><span class="req-tag req-must">MUST</span>Advance automatically when the cap is opened</li>
+            <li><span class="req-tag req-must">MUST</span>Fit a standard 28 mm pill bottle thread</li>
+            <li><span class="req-tag req-must">MUST</span>Require no batteries or electronics</li>
+            <li><span class="req-tag req-should">SHOULD</span>Be printable on a consumer FDM 3D printer</li>
+            <li><span class="req-tag req-should">SHOULD</span>Be child-resistant</li>
+            <li><span class="req-tag req-could">COULD</span>Include a "missed dose" visual indicator</li>
+            <li><span class="req-tag req-could">COULD</span>Accommodate a weekly reset by the user</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="section">
+    <div class="container">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Research</h2>
+      <p class="section-intro">We researched existing solutions, interviewed potential users, and studied relevant mechanical principles before generating any design ideas.</p>
+      <div class="stats-row">
+        <div class="stat-block">
+          <span class="stat-num">50%</span>
+          <span class="stat-label">of patients miss at least one dose per week</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num">3 of 4</span>
+          <span class="stat-label">users interviewed preferred mechanical over digital</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num">28 mm</span>
+          <span class="stat-label">standard pill bottle thread — our target size</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num">5</span>
+          <span class="stat-label">existing products benchmarked and analysed</span>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <div class="card fade-card">
+          <div class="card-icon">👥</div>
+          <h3>User Interviews</h3>
+          <p>We interviewed [X] potential users including elderly patients and caregivers. Key insight: users want something that works without thinking — zero cognitive load.</p>
+        </div>
+        <div class="card fade-card">
+          <div class="card-icon">🔍</div>
+          <h3>Existing Products</h3>
+          <p>Analysed [Product A], [Product B], and [Product C]. Found a gap: nothing uses a passive mechanical advance mechanism on the cap itself.</p>
+        </div>
+        <div class="card fade-card">
+          <div class="card-icon">⚙️</div>
+          <h3>Mechanical Research</h3>
+          <p>Researched ratchet-and-pawl mechanisms, cam follower systems, and snap-fit joints. These directly informed our final mechanism.</p>
+        </div>
+        <div class="card fade-card">
+          <div class="card-icon">📐</div>
+          <h3>Materials Research</h3>
+          <p>Investigated PLA, ABS, and PETG. Selected PLA for prototyping (easy to print, food-safe options available), steel for springs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="section section-dark">
+    <div class="container">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Design Process</h2>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-marker"><span>I</span></div>
+          <div class="tl-body">
+            <h3>Concept Sketches</h3>
+            <p>We generated [X] initial concept sketches exploring different mechanical approaches, from simple external dials to internal ratchet mechanisms.</p>
+            <div class="img-row">
+              <div class="img-placeholder"><span>📷</span><p>Add sketch image</p><code>images/sketch1.jpg</code></div>
+              <div class="img-placeholder"><span>📷</span><p>Add sketch image</p><code>images/sketch2.jpg</code></div>
+              <div class="img-placeholder"><span>📷</span><p>Add sketch image</p><code>images/sketch3.jpg</code></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"><span>II</span></div>
+          <div class="tl-body">
+            <h3>Design Development</h3>
+            <p>From our concepts, we selected [X] promising directions and developed detailed annotated drawings specifying key dimensions and mechanisms.</p>
+            <div class="img-row">
+              <div class="img-placeholder"><span>📷</span><p>Add drawing image</p><code>images/design1.jpg</code></div>
+              <div class="img-placeholder"><span>📷</span><p>Add drawing image</p><code>images/design2.jpg</code></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"><span>III</span></div>
+          <div class="tl-body">
+            <h3>CAD Modelling</h3>
+            <p>We modelled all 10 components in [Fusion 360 / SolidWorks / Onshape]. The assembly includes the outer cap, indicator disk, ratchet wheel, cam lever, pawl, springs, central shaft, and viewing window.</p>
+            <p class="tip-note">↓ See the interactive 3D models in the next section.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"><span>IV</span></div>
+          <div class="tl-body">
+            <h3>Prototype &amp; Testing</h3>
+            <p>We 3D printed a first prototype in PLA. Testing revealed [problem], which led us to [change made]. A second prototype confirmed the fix.</p>
+            <div class="img-row">
+              <div class="img-placeholder"><span>📷</span><p>Add prototype photo</p><code>images/prototype1.jpg</code></div>
+              <div class="img-placeholder"><span>📷</span><p>Add prototype photo</p><code>images/prototype2.jpg</code></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"><span>V</span></div>
+          <div class="tl-body">
+            <h3>Final Design</h3>
+            <p>After [X] rounds of iteration and feedback, we finalised the design. The final cap uses a 7-tooth asymmetric ratchet wheel driven by a spring-loaded cam triggered by the opening twist.</p>
+            <div class="img-row">
+              <div class="img-placeholder"><span>📷</span><p>Add final design image</p><code>images/final.jpg</code></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <section id="models" class="section">
+    <div class="container">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Interactive 3D Models</h2>
+      <p class="section-intro">Click and drag to rotate · Scroll to zoom · Right-click to pan.</p>
+      <div class="models-grid">
+
+        <div class="model-card">
+          <model-viewer
+            src="models/assembly.glb"
+            alt="Full pill cap assembly"
+            auto-rotate
+            camera-controls
+            shadow-intensity="1">
+          </model-viewer>
+          <div class="model-info">
+            <h3>Full Assembly</h3>
+            <p>Complete smart cap — all 10 components</p>
+          </div>
+        </div>
+
+        <div class="model-card">
+          <model-viewer
+            src="models/indicator-disk.glb"
+            alt="Indicator disk"
+            auto-rotate
+            camera-controls
+            shadow-intensity="1">
+          </model-viewer>
+          <div class="model-info">
+            <h3>Indicator Disk</h3>
+            <p>7-segment ratchet disk with day labels</p>
+          </div>
+        </div>
+
+        <div class="model-card">
+          <model-viewer
+            src="models/outer-cap.glb"
+            alt="Outer cap shell"
+            auto-rotate
+            camera-controls
+            shadow-intensity="1">
+          </model-viewer>
+          <div class="model-info">
+            <h3>Outer Cap Shell</h3>
+            <p>Transparent-windowed cap with screw thread</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="feedback" class="section section-dark">
+    <div class="container">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Feedback &amp; Evaluation</h2>
+      <div class="two-col">
+
+        <div>
+          <h3 class="col-heading">User Feedback</h3>
+          <blockquote class="quote-card">
+            <p>"This is so much simpler than the pill organiser I currently use. I can check at a glance whether I've taken my tablet today."</p>
+            <footer>— Interview Participant, age 68</footer>
+          </blockquote>
+          <blockquote class="quote-card">
+            <p>"The click feeling when it advances to the next day is really satisfying. You know it's worked."</p>
+            <footer>— Prototype Testing Participant</footer>
+          </blockquote>
+          <blockquote class="quote-card">
+            <p>"I'd want the window to be a bit bigger so I can read it without my glasses."</p>
+            <footer>— User Feedback, Round 2</footer>
+          </blockquote>
+        </div>
+
+        <div>
+          <h3 class="col-heading">Expert Feedback</h3>
+          <blockquote class="quote-card expert">
+            <p>"Strong mechanical concept. The ratchet-and-pawl approach is appropriate and well-researched. Focus on ensuring tolerances are tight enough for reliable one-tooth advancement."</p>
+            <footer>— [Teacher Name], Technology Dept.</footer>
+          </blockquote>
+          <blockquote class="quote-card expert">
+            <p>"Impressive use of a cam mechanism. Consider how this would be sterilised between uses."</p>
+            <footer>— [Expert Name], [Title]</footer>
+          </blockquote>
+          <div style="margin-top: 2rem;">
+            <h3 class="col-heading">How We Responded</h3>
+            <table class="changes-table">
+              <thead>
+                <tr><th>Feedback</th><th>Change Made</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Window too small to read</td><td>Increased from 8×6 mm to 12×8 mm</td></tr>
+                <tr><td>Disk slipped on release</td><td>Stronger pawl spring (+0.2 N/mm)</td></tr>
+                <tr><td>Thread too hard to grip</td><td>Added knurled grip to outer cap</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="site-footer">
+    <div class="container">
+      <p class="footer-logo"><span class="bracket">[</span>MEDCAP<span class="bracket">]</span></p>
+      <p class="footer-meta">Central York High School · Engineering and Design Competition · 2026</p>
+      <p class="footer-small">Built with HTML, CSS &amp; JS · Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
