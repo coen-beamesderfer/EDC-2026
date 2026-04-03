@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MedCap · Smart Pill Cap Design Portfolio</title>
+  <title>MedCap · Pill Cap Design Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -20,20 +20,21 @@
         <li><a href="#about">About</a></li>
         <li><a href="#brief">Brief</a></li>
         <li><a href="#research">Research</a></li>
-        <li><a href="#process">Process</a></li>
+        <li><a href="#sketch">Sketches</a></li>
         <li><a href="#models">3D Models</a></li>
         <li><a href="#feedback">Feedback</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- ── HERO ─────────────────────────────────────────────────────── -->
   <section id="hero">
     <div class="hero-grid" aria-hidden="true"></div>
     <div class="scan-line" aria-hidden="true"></div>
     <div class="hero-content">
       <p class="eyebrow"><span class="dot-blink"></span>Engineering Design Portfolio</p>
-      <h1 class="hero-title">Smart Pill Cap<br /></h1>
-      <p class="hero-sub">A gear-driven automatic day tracker for standard pill bottles—designed, prototyped, and tested from concept to CAD.</p>
+      <h1 class="hero-title">MedCap</h1>
+      <p class="hero-sub">A manual day-tracking pill cap—an indicator disk seated in a slotted cap casing so users always know whether they have taken today's medication.</p>
       <div class="team-row">
         <span class="team-chip">Coen Beamesderfer</span>
         <span class="team-chip">Abigail Zayatz</span>
@@ -46,64 +47,120 @@
     <div class="corner corner-br" aria-hidden="true"></div>
   </section>
 
+  <!-- ── 01 ABOUT ──────────────────────────────────────────────────── -->
   <section id="about" class="section">
     <div class="container">
       <span class="section-num">01</span>
       <h2 class="section-title">About Us</h2>
-      <p class="section-intro">We are a team of two upperclassmen at Central York High School. This portfolio documents our full design process for our major project: a smart pill cap with an automatic day indicator.</p>
+      <p class="section-intro">We are a team of two upperclassmen at Central York High School. This portfolio documents our full design process for MedCap: a pill cap with a manual day indicator.</p>
       <div class="cards-grid">
         <div class="card fade-card">
           <img class="card-avatar" src="images/coen.jpg" alt="Coen Beamesderfer" />
           <h3>Coen Beamesderfer</h3>
           <p class="card-role">Research &amp; Documentation</p>
-          <p>I am a senior at Central York High School with a goal of pursuing a career in medicine as a physician. Having an interest in how the body works and how the healthcare system can be improved, I have built a foundation for that path through electives at CYHS like Anatomy & Physiology and Honors Organic Chemistry. I decided to enter in the competition as medication on-adherence is a problem that affects people every day, and the challenge of designing a physical, mechanical solution felt directly connected to the kind of doctor I want to become.</p>
+          <p>I am a senior at Central York High School with a goal of pursuing a career in medicine as a physician. Having an interest in how the body works and how the healthcare system can be improved, I have built a foundation for that path through electives at CYHS like Anatomy &amp; Physiology and Honors Organic Chemistry. I decided to enter in the competition as medication non-adherence is a problem that affects people every day, and the challenge of designing a physical, mechanical solution felt directly connected to the kind of doctor I want to become.</p>
         </div>
         <div class="card fade-card">
           <img class="card-avatar" src="images/abby.jpeg" alt="Abigail Zayatz" />
           <h3>Abigail Zayatz</h3>
           <p class="card-role">CAD Lead</p>
-          <p>I am a junior at Central York High School pursuing a future career in biomedical engineering. I built a strong technical foundation through Honors Drafting and CADD, and am currently enrolled in CHS Advanced CADD and Engineering, developing the precise, hands-on design skills that the field demands. When the opportunity to enter this competition came up, it was a natural fit. It was a chance to apply the classroom knowledge to a real-world problem, deepen my practical experience with CAD, and work through the full engineering design process from concept to finished model.</p>
+          <p>I am a junior at Central York High School pursuing a future career in biomedical engineering. I built a strong technical foundation through Honors Drafting and CADD, and am currently enrolled in CHS Advanced CADD and Engineering, developing the precise, hands-on design skills that the field demands. When the opportunity to enter this competition came up, it was a natural fit—a chance to apply classroom knowledge to a real-world problem, deepen my practical experience with CAD, and work through the full engineering design process from concept to finished model.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ── 02 DESIGN BRIEF ───────────────────────────────────────────── -->
   <section id="brief" class="section section-dark">
     <div class="container">
       <span class="section-num">02</span>
       <h2 class="section-title">Design Brief</h2>
-      <div class="two-col">
-        <div>
-          <h3 class="col-heading">The Problem</h3>
-          <p>Elderly and chronically ill patients frequently miss doses or accidentally double-dose because standard pill bottles give no indication of whether today's dose has already been taken.</p>
-          <p>Existing pill organizers are bulky and don't attach to the original bottle. Smart electronic reminders require charging and are often too complex for elderly users. Seemingly great options are very expensive.</p>
-          <h3 class="col-heading" style="margin-top: 2rem;">Our Solution</h3>
-          <p>A passive mechanical cap that automatically advances a visible day indicator each time the bottle is opened—no batteries, no apps, no extra equipment.</p>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-marker"><span>I</span></div>
+          <div class="tl-body">
+            <h3>Client</h3>
+            <p>Central York High School Engineering and Design Competition—a program that challenges students to identify a real-world problem and develop a physical design solution that demonstrates the full engineering design process from research through prototyping.</p>
+          </div>
         </div>
-        <div>
-          <h3 class="col-heading">Design Requirements</h3>
-          <ul class="req-list">
-            <li><span class="req-tag req-must">MUST</span>Display the current day of the week clearly</li>
-            <li><span class="req-tag req-must">MUST</span>Advance automatically when the cap is opened</li>
-            <li><span class="req-tag req-must">MUST</span>Fit a standard 28 mm pill bottle thread</li>
-            <li><span class="req-tag req-must">MUST</span>Require no batteries or electronics</li>
-            <li><span class="req-tag req-should">SHOULD</span>Be printable on a consumer FDM 3D printer</li>
-            <li><span class="req-tag req-should">SHOULD</span>Be child-resistant</li>
-            <li><span class="req-tag req-could">COULD</span>Include a "missed dose" visual indicator</li>
-            <li><span class="req-tag req-could">COULD</span>Accommodate a weekly reset by the user</li>
-          </ul>
+
+        <div class="tl-item">
+          <div class="tl-marker"><span>II</span></div>
+          <div class="tl-body">
+            <h3>Target Consumer</h3>
+            <p>Elderly adults and chronically ill patients who take one or more daily oral medications and who may have difficulty remembering whether a dose has already been taken. This includes individuals who manage their own medications independently as well as those assisted by a caregiver.</p>
+          </div>
         </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"><span>III</span></div>
+          <div class="tl-body">
+            <h3>Designer</h3>
+            <p><strong>Coen Beamesderfer</strong> is responsible for research, user interviews, and all written documentation. <strong>Abigail Zayatz</strong> is the CAD lead, responsible for translating the concept sketches and detailed design drawings into accurate 3D models in SolidWorks and producing the final files used for prototyping.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"><span>IV</span></div>
+          <div class="tl-body">
+            <h3>Problem Statement</h3>
+            <p>Many elderly and chronically ill patients miss doses or accidentally take a double dose because standard pill bottles provide no record of whether the day's medication has already been taken. Existing solutions—weekly pill organizers, electronic reminder devices, and smartphone apps—are either too bulky, too expensive, require charging, or demand a level of technological familiarity that many older users do not have. There is currently no simple, battery-free, low-cost device that attaches directly to a standard pill bottle and tells a patient at a glance whether they have taken today's medication.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"><span>V</span></div>
+          <div class="tl-body">
+            <h3>Design Statement</h3>
+            <p>We will design a replacement pill-bottle cap consisting of two main components: a rotating indicator disk labeled with the days of the week, and a cap casing fitted with internal slots that hold the disk securely in each day position. After taking their medication, the user manually slides the disk forward to the current day; a window cut into the side of the casing always displays the selected day. The cap will thread onto a standard 28 mm pharmaceutical bottle, require no batteries or electronics, and be fully producible on a consumer FDM 3D printer—making it affordable, accessible, and straightforward for the target consumer to use.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"><span>VI</span></div>
+          <div class="tl-body">
+            <h3>Criteria</h3>
+            <ul class="req-list">
+              <li><span class="req-tag req-must">MUST</span>Display the current day of the week through a window in the cap casing</li>
+              <li><span class="req-tag req-must">MUST</span>Allow the user to manually advance the indicator disk by sliding it</li>
+              <li><span class="req-tag req-must">MUST</span>Thread onto a standard 28 mm pharmaceutical bottle neck</li>
+              <li><span class="req-tag req-must">MUST</span>Require no batteries or electronics of any kind</li>
+              <li><span class="req-tag req-should">SHOULD</span>Use internal slots to hold the disk firmly at each day position</li>
+              <li><span class="req-tag req-should">SHOULD</span>Be fully printable on a consumer FDM 3D printer</li>
+              <li><span class="req-tag req-could">COULD</span>Include a reset feature to return the disk to the start of the weekly cycle</li>
+              <li><span class="req-tag req-could">COULD</span>Incorporate a child-resistant opening mechanism</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"><span>VII</span></div>
+          <div class="tl-body">
+            <h3>Constraints</h3>
+            <ul class="req-list">
+              <li><span class="req-tag req-must">MATERIAL</span>All printed components must use PLA filament</li>
+              <li><span class="req-tag req-must">SIZE</span>Outer diameter must not significantly exceed that of a standard pill bottle cap</li>
+              <li><span class="req-tag req-must">COST</span>Prototype production must remain within the competition budget allowance</li>
+              <li><span class="req-tag req-must">TIME</span>All design work and documentation must be completed within the competition timeline</li>
+              <li><span class="req-tag req-should">SOFTWARE</span>All CAD modeling must be completed in SolidWorks</li>
+              <li><span class="req-tag req-should">SAFETY</span>All components must be non-toxic and safe for handling by elderly users</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
+  <!-- ── 03 RESEARCH ───────────────────────────────────────────────── -->
   <section id="research" class="section">
     <div class="container">
       <span class="section-num">03</span>
       <h2 class="section-title">Research</h2>
       <p class="section-intro">We researched existing solutions, interviewed potential users, and studied relevant mechanical principles before generating any design ideas.</p>
-      <div class="stats-row">
 
+      <div class="stats-row">
         <div class="stat-block">
           <span class="stat-num">50%</span>
           <span class="stat-label">of chronically ill patients fail to adhere to prescribed medication regimens</span>
@@ -112,71 +169,69 @@
             <a href="https://www.pharmacytimes.com/view/rxfocus-0111" target="_blank" rel="noopener">Pharmacy Times</a>
           </span>
         </div>
-
         <div class="stat-block">
           <span class="stat-num">49%</span>
-          <span class="stat-label">of daily medication users reported accidentally missing a dose — supporting our focus on passive, zero-effort reminders</span>
+          <span class="stat-label">of daily medication users reported accidentally missing a dose—supporting our focus on a low-effort, glanceable indicator</span>
           <span class="stat-cite">
             Ng WL, et al. <em>A Pilot Study to Evaluate the Acceptability of Using a Smart Pillbox.</em> PMC, 2019.
             <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6843901/" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov</a>
           </span>
         </div>
-
         <div class="stat-block">
           <span class="stat-num">28 mm</span>
-          <span class="stat-label">standard GPI pharmaceutical bottle neck diameter — our target thread size</span>
+          <span class="stat-label">standard GPI pharmaceutical bottle neck diameter—our target thread size</span>
           <span class="stat-cite">
             Laiyang Packaging. <em>The ABCs of Plastic Medicine Bottles.</em>
             <a href="https://laiyangpackaging.com/b-the-abcs-of-plastic-medicine-bottles-your-quick-guide/" target="_blank" rel="noopener">laiyangpackaging.com</a>
           </span>
         </div>
-
         <div class="stat-block">
           <span class="stat-num">5</span>
           <span class="stat-label">existing products benchmarked and analysed</span>
-          <span class="stat-cite">Internal benchmark — see Research cards below.</span>
+          <span class="stat-cite">Internal benchmark—see Research cards below.</span>
         </div>
-
       </div>
+
       <div class="cards-grid">
         <div class="card fade-card">
           <div class="card-icon">👥</div>
           <h3>User Interviews</h3>
-          <p>We interviewed 25 potential users including elderly patients and caregivers. Key insight: users want something that works without thinking—zero cognitive load.</p>
+          <p>We interviewed 25 potential users including elderly patients and caregivers. The key finding was consistent: users want something that works without thinking—zero cognitive load and no setup required.</p>
         </div>
         <div class="card fade-card">
           <div class="card-icon">🔍</div>
           <h3>Existing Products</h3>
-          <p>Analysed e-Pill TimeCap, Odaro Pill Reminder, and Colorwing Smart Pill Dispenser. Found a gap: nothing uses a passive mechanical advance mechanism on the cap itself.</p>
+          <p>We analysed the e-Pill TimeCap, Odaro Pill Reminder, and Colorwing Smart Pill Dispenser. A clear gap emerged: no existing product offers a simple, manual, battery-free day indicator built directly into the cap itself.</p>
         </div>
         <div class="card fade-card">
           <div class="card-icon">⚙️</div>
           <h3>Mechanical Research</h3>
-          <p>Researched gear train systems, cam follower mechanisms, and snap-fit joints. These directly informed our final gear-driven mechanism.</p>
+          <p>We researched snap-fit joints, detent mechanisms, and slotted track systems. A slotted-disk approach—where the indicator disk seats into discrete day positions inside the casing—proved the most reliable and manufacturable option within our constraints.</p>
         </div>
         <div class="card fade-card">
           <div class="card-icon">📐</div>
           <h3>Materials Research</h3>
-          <p>Investigated PLA, ABS, and PETG. Selected PLA for prototyping (easy to print, food-safe options available), steel for springs.</p>
+          <p>We investigated PLA, ABS, and PETG. PLA was selected for prototyping due to its ease of printing, dimensional accuracy on consumer FDM printers, and the availability of food-safe grades.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="process" class="section section-dark">
+  <!-- ── 04 SKETCHES ───────────────────────────────────────────────── -->
+  <section id="sketch" class="section section-dark">
     <div class="container">
       <span class="section-num">04</span>
-      <h2 class="section-title">Design Process</h2>
+      <h2 class="section-title">Design Sketches</h2>
+      <p class="section-intro">Hand-drawn sketches were produced before any CAD work to explore component relationships and establish key dimensions.</p>
       <div class="timeline">
 
         <div class="tl-item">
           <div class="tl-marker"><span>I</span></div>
           <div class="tl-body">
-            <h3>Concept Sketches</h3>
-            <p>We generated 2 initial concept sketches exploring different mechanical approaches.</p>
+            <h3>Concept Sketch</h3>
+            <p>Initial freehand sketch exploring how the indicator disk, cap casing, and viewing window relate to one another. Used to evaluate the core idea before committing to detailed dimensions.</p>
             <div class="img-row">
-              <img src="images/abby.jpg" alt="Sketch 1" class="process-img" />
-              <img src="images/abby.jpg" alt="Sketch 2" class="process-img" />
+              <img src="images/concept-sketch.png" alt="Concept sketch of the MedCap" class="process-img" style="max-width:100%; width:600px; height:auto; object-fit:contain;" />
             </div>
           </div>
         </div>
@@ -184,41 +239,10 @@
         <div class="tl-item">
           <div class="tl-marker"><span>II</span></div>
           <div class="tl-body">
-            <h3>Design Development</h3>
-            <p>From our concepts, we selected 1 promising direction and developed detailed annotated drawings specifying key dimensions and mechanisms.</p>
+            <h3>Detailed Design Sketch</h3>
+            <p>Annotated drawing with key dimensions, slot positions, thread specification, and window geometry. This drawing served as the direct reference for CAD modeling in SolidWorks.</p>
             <div class="img-row">
-              <img src="images/abby.jpg" alt="Design Drawing 1" class="process-img" />
-            </div>
-          </div>
-        </div>
-
-        <div class="tl-item">
-          <div class="tl-marker"><span>III</span></div>
-          <div class="tl-body">
-            <h3>CAD Modelling</h3>
-            <p>We modelled all 3 components in SolidWorks. The assembly includes the bottle base, indicator disk, and cap casing.</p>
-            <p class="tip-note">See the interactive 3D models in the next section.</p>
-          </div>
-        </div>
-
-        <div class="tl-item">
-          <div class="tl-marker"><span>IV</span></div>
-          <div class="tl-body">
-            <h3>Prototype &amp; Testing</h3>
-            <p>We 3D printed a first prototype in PLA. Testing revealed a faulty cap design, which led us to remodel the structure of the cap. A second prototype confirmed the fix.</p>
-            <div class="img-row">
-              <img src="images/abby.jpg" alt="Prototype 1" class="process-img" />
-            </div>
-          </div>
-        </div>
-
-        <div class="tl-item">
-          <div class="tl-marker"><span>V</span></div>
-          <div class="tl-body">
-            <h3>Final Design</h3>
-            <p>After 4 rounds of iteration and feedback, we finalized the design. The final cap uses a 7-tooth drive gear meshing with the indicator disk, advancing one day position per opening twist.</p>
-            <div class="img-row">
-              <img src="images/abby.jpg" alt="Final Design" class="process-img" />
+              <img src="images/detailed-sketch.jpg" alt="Detailed annotated design sketch of the MedCap" class="process-img" />
             </div>
           </div>
         </div>
@@ -227,6 +251,7 @@
     </div>
   </section>
 
+  <!-- ── 05 3D MODELS ──────────────────────────────────────────────── -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
   <section id="models" class="section">
@@ -239,14 +264,14 @@
         <div class="model-card">
           <model-viewer
             src="models/bottlebase.glb"
-            alt="Full pill cap assembly"
+            alt="Bottle base"
             auto-rotate
             camera-controls
             shadow-intensity="1">
           </model-viewer>
           <div class="model-info">
             <h3>Bottle Base</h3>
-            <p>Bottle base for the cap to attach to</p>
+            <p>Standard 28 mm threaded bottle base the cap attaches to</p>
           </div>
         </div>
 
@@ -260,7 +285,7 @@
           </model-viewer>
           <div class="model-info">
             <h3>Indicator Disk</h3>
-            <p>Disk with day labels</p>
+            <p>Disk labeled with the days of the week; user slides it to the current day and internal slots hold it in place</p>
           </div>
         </div>
 
@@ -274,7 +299,7 @@
           </model-viewer>
           <div class="model-info">
             <h3>Cap Casing</h3>
-            <p>Windowed cap with screw thread</p>
+            <p>Outer casing with a viewing window and internal slots that locate the indicator disk at each day position</p>
           </div>
         </div>
 
@@ -282,6 +307,7 @@
     </div>
   </section>
 
+  <!-- ── 06 FEEDBACK ───────────────────────────────────────────────── -->
   <section id="feedback" class="section section-dark">
     <div class="container">
       <span class="section-num">06</span>
@@ -295,7 +321,7 @@
             <footer>— Interview Participant, age 68</footer>
           </blockquote>
           <blockquote class="quote-card">
-            <p>"Turning the cap and watching the gear move the day forward is really intuitive — you can see exactly how it works just by looking at it."</p>
+            <p>"Sliding the disk to today's day is really intuitive—you can see exactly how it works just by looking at it."</p>
             <footer>— Prototype Testing Participant</footer>
           </blockquote>
           <blockquote class="quote-card">
@@ -311,9 +337,14 @@
               <tr><th>Feedback</th><th>Change Made</th></tr>
             </thead>
             <tbody>
-              <tr><td>Window too small to read</td><td>Redesigned window to a trapezoidal aperture 0.25 in. tall with sides angled 51º apart</td></tr>
-              <tr><td>Disk slipped on release</td><td>Added a detent feature to the gear teeth to hold position</td></tr>
-              <tr><td>Thread too hard to grip</td><td>Added knurled grip to outer cap</td></tr>
+              <tr>
+                <td>Window too small to read</td>
+                <td>Redesigned window to a trapezoidal aperture 0.25 in. tall with sides angled 51° apart</td>
+              </tr>
+              <tr>
+                <td>Disk shifted after sliding</td>
+                <td>Deepened the internal slots so the disk seats more firmly in each day position</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -322,6 +353,7 @@
     </div>
   </section>
 
+  <!-- ── FOOTER ────────────────────────────────────────────────────── -->
   <footer id="site-footer">
     <div class="container">
       <p class="footer-logo"><span class="bracket">[</span>MEDCAP<span class="bracket">]</span></p>
